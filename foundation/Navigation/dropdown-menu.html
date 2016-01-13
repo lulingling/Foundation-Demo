@@ -11,21 +11,84 @@
 <!--Horizontal-->
 <ul id="test" class="dropdown menu" data-dropdown-menu>
     <li>
-        <a href="#">Item 1</a>
-        <ul class="menu">
+        <a href="#">Item 1 </a>
+        <ul class="menu" style="background-color: lightblue;">
             <li><a href="#">SubItem 1</a></li>
-            <li><a href="#">SubItem 2</a></li>
+            <li>
+                <a href="#">SubItem 2</a>
+                <ul class="menu">
+                    <li><a href="#">Sub-SubItem 1</a></li>
+                    <li><a href="#">Sub-SubItem 2</a></li>
+                    <li><a href="#">Sub-SubItem 3</a></li>
+                    <li>
+                        <a href="#">Sub-SubItem 4</a>
+                        <ul class="menu">
+                            <li><a href="#">Sub-SubItem 11</a></li>
+                            <li><a href="#">Sub-SubItem 22</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Sub-SubItem 5</a>
+                        <ul class="menu">
+                            <li><a href="#">Sub-SubItem 11</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
             <li><a href="#">SubItem 3</a></li>
         </ul>
     </li>
-    <li><a href="#">Item 2</a></li>
+    <li>
+        <a href="#">Item 2</a>
+        <ul class="menu" style="border: 2px solid lightcoral;">
+            <li><a href="#">SubItem 1</a></li>
+            <li><a href="#">SubItem 2</a></li>
+        </ul>
+    </li>
     <li><a href="#">Item 3</a></li>
     <li><a href="#">Item 4</a></li>
 </ul>
+
+<!--Vertical-->
+<ul id="test1" class="vertical menu dropdown" data-dropdown-menu style="max-width: 200px;">
+    <li>
+        <a href="#">Item 1</a>
+        <ul class="menu">
+            <li><a href="#">Item 1A Loooong</a></li>
+            <li><a href="#">Item 1B</a></li>
+            <li><a href="#">Item 1C</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Item 2</a>
+        <ul class="menu">
+            <li><a href="#">Item 2A</a></li>
+            <li><a href="#">Item 2B</a></li>
+            <li><a href="#">Item 2C</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Item 3</a>
+        <ul class="menu">
+            <li><a href="#">Item 3A</a></li>
+            <li><a href="#">Item 3B</a></li>
+            <li><a href="#">Item 3C</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Item 1</a>
+        <ul class="menu">
+            <li><a href="#">Item 1A Loooong</a></li>
+            <li><a href="#">Item 2A</a></li>
+            <li><a href="#">Item 3A</a></li>
+        </ul>
+    </li>
+</ul>
+
 <script>
     $(document).ready(function () {
-        var element = $("#test");
-        var ele = new Foundation.DropdownMenu(element);
+        var test = new Foundation.DropdownMenu($("#test"));
+        var test1 = new Foundation.DropdownMenu($("#test1"))
     })
 </script>
 </body>
