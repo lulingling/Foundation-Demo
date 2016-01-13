@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/foundation.css" rel="stylesheet" type="text/css">
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="../js/foundation.js"></script>
+</head>
+<style>
+    #test {
+        max-width: 150px;
+    }
+</style>
+<body>
+<!--Accordion Menu-->
+<ul id="test" class="menu vertical" data-accordion-menu>
+    <li>
+        <a href="#">Item 1</a>
+        <ul class="menu vertical nested">
+            <li>
+                <a href="#">Item 1A</a>
+                <ul class="menu vertical nested">
+                    <li><a href="#">Item 1Aa</a></li>
+                    <li><a href="#">Item 1Ba</a></li>
+                    <li><a href="#">Item 1Ca</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Item 1B</a></li>
+            <li><a href="#">Item 1C</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Item 1</a>
+        <ul class="menu vertical nested">
+            <li><a href="#">Item 1A</a></li>
+            <li><a href="#">Item 1B</a></li>
+            <li><a href="#">Item 1C</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Item 1</a></li>
+</ul>
+<script>
+    $(document).ready(function () {
+        var test = new Foundation.AccordionMenu($("#test"));
+        test.hideAll();
+    })
+</script>
+</body>
+</html>
