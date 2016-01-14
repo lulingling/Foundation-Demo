@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/foundation.css" rel="stylesheet" type="text/css">
+    <link href="../css/motion-ui.css" rel="stylesheet" type="text/css">
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="../js/foundation.js"></script>
+    <script src="../js/motion-ui.min.js"></script>
+</head>
+<style>
+
+</style>
+<body>
+<!--Basics-->
+<!--Sizing: .tiny .small .large-->
+<p><a data-toggle="exampleModal1">Click me for a modal</a></p>
+
+<div class="reveal large" id="exampleModal1" data-reveal
+     data-animation-in="slide-in-down" data-animation-out="slide-out-up">
+    <h1>Awesome. I have it.</h1>
+
+    <p class="lead">Your touch. It is mine.</p>
+
+    <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+    <button class="close-button" type="button" data-close aria-label="Close reveal">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<!--Modals in modals-->
+<!--data-overlay = "false" : Remove the overlay-->
+<p><a data-open="exampleModal11">Click me for a modal in modal</a></p>
+
+<div id="exampleModal11" class="reveal tiny" data-reveal
+        data-animation-in="slide-in-left" data-animation-out="slide-out-right">
+    <h1>Awesome</h1>
+
+    <p class="lead">I have another modal inside of me!</p>
+    <a class="success button" data-toggle="exampleModal111">Click me for another modal.</a>
+    <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div id="exampleModal111" class="reveal small" data-reveal data-overlay="false">
+    <h2>Another Modal</h2>
+    <button class="close-button" data-close type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<!--Video-->
+<p><a data-open="exampleModal12">Click me for a video modal</a></p>
+
+<div id="exampleModal12" class="reveal" data-reveal>
+    <h2 id="videoModalTitle">This modal has video</h2>
+
+    <div class="flex-video widescreen vimeo">
+        <iframe width="1280" height="720" src="//www.youtube-nocookie.com/embed/wnXCopXXblE?rel=0"
+                frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <button class="close-button" data-close type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<!--Full-screen-->
+<p><a data-open="exampleModal13">Click me for a full modal</a></p>
+
+<div id="exampleModal13" class="full reveal" data-reveal>
+    <p>OH I'm so fuuuul</p>
+    <img src="../img/img1.jpg" alt="Cat" width="100%" height="100%">
+    <button class="close-button" type="button" data-close aria-label="Close reveal">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+
+<!--Animations: need motion-ui-->
+<p><a data-open="exampleModal14">Click me for a animation modal</a></p>
+
+<div id="exampleModal14" class="reveal" data-reveal data-close-on-click="true"
+     data-animation-in="spin-in" data-animation-out="spin-out">
+    <h1>Whoa, I'm dizzy!</h1>
+
+    <p class="lead">There are many options for animating modals,
+        check out the Motion UI library to see them all</p>
+
+    <button class="close-button" data-close type="button" aria-label="Close reveal">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<script>
+    $(document).ready(function () {
+        var elem1 = new Foundation.Reveal($("#exampleModal1"));
+        var elem11 = new Foundation.Reveal($("#exampleModal11"));
+        var elem111 = new Foundation.Reveal($("#exampleModal111"));
+
+        var elem12 = new Foundation.Reveal($("#exampleModal12"));
+        var elem13 = new Foundation.Reveal($("#exampleModal13"));
+        var elem14 = new Foundation.Reveal($("#exampleModal14"));
+    })
+</script>
+</body>
+</html>
