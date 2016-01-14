@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/foundation.css" rel="stylesheet" type="text/css">
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="../js/foundation.js"></script>
+</head>
+<style>
+</style>
+<body>
+<!--Basics-->
+<ul class="tabs" data-tabs id="example-tabs">
+    <li class="tabs-title is-active"><a href="#panel1">Tab1</a></li>
+    <li class="tabs-title"><a href="#panel2">Tab2</a></li>
+    <li class="tabs-title"><a href="#panel3">Tab3</a></li>
+    <li class="tabs-title"><a href="#panel4">Tab4</a></li>
+    <li class="tabs-title"><a href="#panel5">Tab5</a></li>
+</ul>
+
+<div class="tabs-content" data-tab-content="example-tabs">
+    <div class="tabs-panel is-active" id="panel1">
+        <p>One: This is one tab.</p>
+    </div>
+    <div class="tabs-panel" id="panel2">
+        <p>Two: This is two tab.</p>
+    </div>
+    <div class="tabs-panel" id="panel3">
+        <p>Three: This is three tab.</p>
+    </div>
+    <div class="tabs-panel" id="panel4">
+        <p>Four: This is four tab.</p>
+    </div>
+    <div class="tabs-panel" id="panel5">
+        <p>Five: This is five tab.</p>
+    </div>
+</div>
+
+<!--Vertical tabs:-->
+<div>
+    <div class="medium-2 columns">
+        <ul class="vertical tabs" id="example-vertical-tabs" data-tabs>
+            <li class="tabs-title is-active"><a href="#panel11">Tab1</a></li>
+            <li class="tabs-title"><a href="#panel12">Tab2</a></li>
+            <li class="tabs-title"><a href="#panel13">Tab3</a></li>
+            <li class="tabs-title"><a href="#panel14">Tab4</a></li>
+            <li class="tabs-title"><a href="#panel15">Tab5</a></li>
+            <li class="tabs-title"><a href="#panel16">Tab6</a></li>
+        </ul>
+    </div>
+    <div class="medium-10 columns">
+        <div class="vertical tabs-content" data-tab-content="example-vertical-tabs">
+            <div class="tabs-panel is-active" id="panel11">
+                <p>One: This is one.</p>
+            </div>
+            <div class="tabs-panel" id="panel12">
+                <p>Two: This is two.</p>
+            </div>
+            <div class="tabs-panel" id="panel13">
+                <p>Three: This is three.</p>
+            </div>
+            <div class="tabs-panel" id="panel14">
+                <p>Four: This is four.</p>
+            </div>
+            <div class="tabs-panel" id="panel15">
+                <p>Five: This is five.</p>
+            </div>
+            <div class="tabs-panel" id="panel16">
+                <p>Six: This is six.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        var tab1 = new Foundation.Tabs($("#example-tabs"));
+        var tab2 = new Foundation.Tabs($("#example-vertical-tabs"));
+    })
+</script>
+</body>
+</html>
