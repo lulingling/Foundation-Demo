@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/foundation.css" rel="stylesheet" type="text/css">
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="../js/foundation.js"></script>
+</head>
+<style>
+    #offCanvasLeft {
+        background-color: red;
+    }
+
+    #offCanvasRight {
+        background-color: blue;
+    }
+
+</style>
+<body>
+<!--Off-canvas: No effect-->
+<button type="button" class="button" data-toggle="offCanvasLeft">Open Left Canvas</button>
+<button type="button" class="button" data-toggle="offCanvasRight">Open Right Canvas</button>
+
+<div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+            <ul class="menu vertical">
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+            </ul>
+        </div>
+        <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+            <ul class="menu vertical">
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+            </ul>
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+            <h4>Join US</h4>
+
+            <p>This is fun!</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        var elem = new Foundation.OffCanvas($("#test"));
+    })
+</script>
+</body>
+</html>
