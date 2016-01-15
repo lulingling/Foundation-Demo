@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/foundation.css" rel="stylesheet" type="text/css">
+    <link href="../css/motion-ui.css" rel="stylesheet" type="text/css">
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="../js/foundation.js"></script>
+</head>
+<body>
+<!--Basic Orbit Slider-->
+<div id="basic-orbit" class="orbit" data-orbit>
+    <ul class="orbit-container">
+        <button class="orbit-previous" aria-label="previous">
+            &#9664;
+            <span class="show-for-sr">Previous Slider</span>
+        </button>
+
+        <button class="orbit-next" aria-label="next">
+            &#9654;
+            <span class="show-for-sr">Previous Slider</span>
+        </button>
+
+        <li class="orbit-slide">
+            <div>
+                <h3 class="text-center">One</h3>
+
+                <p class="text-center">One: This is one.</p>
+
+                <h3 class="text-center">This Orbit slider does not use animations.</h3>
+            </div>
+        </li>
+
+        <li class="orbit-slide">
+            <div>
+                <h3 class="text-center">Two</h3>
+
+                <p class="text-center">Two: This is two.</p>
+
+                <h3 class="text-center">This Orbit slider does not use animations.</h3>
+            </div>
+        </li>
+
+        <li class="orbit-slide">
+            <div>
+                <h3 class="text-center">Three</h3>
+
+                <p class="text-center">Three: This is three.</p>
+
+                <h3 class="text-center">This Orbit slider does not use animations.</h3>
+            </div>
+        </li>
+
+        <li class="orbit-slide">
+            <div>
+                <h3 class="text-center">Four</h3>
+
+                <p class="text-center">Four: This is four.</p>
+
+                <h3 class="text-center">This Orbit slider does not use animations.</h3>
+            </div>
+        </li>
+
+        <li class="orbit-slide">
+            <div>
+                <h3 class="text-center">Five</h3>
+
+                <p class="text-center">Five: This is five.</p>
+
+                <h3 class="text-center">This Orbit slider does not use animations.</h3>
+            </div>
+        </li>
+
+
+    </ul>
+
+    <nav class="orbit-bullets">
+        <button class="is-active" data-slide="0">
+            <span class="show-for-sr">First slide details</span>
+            <span class="show-for-sr">Current slide</span>
+        </button>
+        <button data-slide="1">
+            <span class="show-for-sr">Second slide details</span>
+        </button>
+        <button data-slide="2">
+            <span class="show-for-sr">Third slide details</span>
+        </button>
+        <button data-slide="3">
+            <span class="show-for-sr">Fouth slide details</span>
+        </button>
+        <button data-slide="4">
+            <span class="show-for-sr">Fifth slide details</span>
+        </button>
+    </nav>
+</div>
+
+<!--Image Animation Slider-->
+<!--data-options:No effect-->
+<div id="image-orbit" class="orbit" data-orbit style="width: 1000px;height: 800px; margin: 0 auto;"
+     data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+    <ul class="orbit-container">
+        <button class="orbit-previous" aria-label="previous">
+            &#9664;
+            <span class="show-for-sr">Previous Slider</span>
+        </button>
+
+        <button class="orbit-next" aria-label="next">
+            &#9654;
+            <span class="show-for-sr">Previous Slider</span>
+        </button>
+
+        <li class="orbit-slide">
+            <img class="orbit-image" src="image/image1.jpg">
+            <figcaption class="orbit-caption">Orbit Image 1</figcaption>
+        </li>
+
+        <li class="orbit-slide">
+            <img class="orbit-image" src="image/image2.jpg">
+            <figcaption class="orbit-caption">Orbit Image 2</figcaption>
+        </li>
+
+        <li class="orbit-slide">
+            <img class="orbit-image" src="image/image3.jpg">
+            <figcaption class="orbit-caption">Orbit Image 3</figcaption>
+        </li>
+
+        <li class="orbit-slide">
+            <img class="orbit-image" src="image/image4.jpg">
+            <figcaption class="orbit-caption">Orbit Image 4</figcaption>
+        </li>
+
+        <li class="orbit-slide">
+            <img class="orbit-image" src="image/image5.jpg">
+            <figcaption class="orbit-caption">Orbit Image 5</figcaption>
+        </li>
+    </ul>
+
+    <nav class="orbit-bullets">
+        <button class="is-active" data-slide="0">
+            <span class="show-for-sr">First slide details</span>
+            <span class="show-for-sr">Current slide</span>
+        </button>
+        <button data-slide="1">
+            <span class="show-for-sr">Second slide details</span>
+        </button>
+        <button data-slide="2">
+            <span class="show-for-sr">Third slide details</span>
+        </button>
+        <button data-slide="3">
+            <span class="show-for-sr">Fouth slide details</span>
+        </button>
+        <button data-slide="4">
+            <span class="show-for-sr">Fifth slide details</span>
+        </button>
+    </nav>
+</div>
+
+<script>
+    $(document).ready(function () {
+        var basic_orbit = new Foundation.Orbit($("#basic-orbit"));
+        var image_orbit = new Foundation.Orbit($("#image-orbit"));
+    })
+</script>
+</body>
+</html>
