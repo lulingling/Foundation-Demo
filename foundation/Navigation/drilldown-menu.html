@@ -58,7 +58,9 @@
 </ul>
 <script>
     $(document).ready(function () {
-        var test = new Foundation.Drilldown($("#test"));
+        var test = new Foundation.Drilldown($("#test"), {
+            backButton: '<li class="js-drilldown-back"><a>返回</a></li>'
+        });
     })
 </script>
 </body>
