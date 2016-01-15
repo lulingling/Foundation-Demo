@@ -77,6 +77,10 @@
 <script>
     $(document).ready(function () {
         var tab1 = new Foundation.Tabs($("#example-tabs"));
+        $("#example-tabs").on("change.zf.tabs", function () {
+            console.log("Those tabs sure did change!")
+        });
+
         var tab2 = new Foundation.Tabs($("#example-vertical-tabs"));
     })
 </script>
