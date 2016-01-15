@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/foundation.css" rel="stylesheet" type="text/css">
+    <link href="../css/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css">
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="../js/foundation.js"></script>
+</head>
+<body>
+<!--Basics-->
+<!--No effect-->
+<p>
+    The <span id="tip1" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1
+              title="Fancy word for a beetle.">scarabaeus</span> hung quite clear of any branches, and, if allowed to
+    fall, would have fallen at our feet. Legrand immediately took the scythe, and cleared with it a circular space,
+    three or four yards in diameter, just beneath the insect, and, having accomplished this, ordered Jupiter to let go
+    the string and come down from the tree.
+</p>
+
+<p>
+    This is an
+    <span id="tip2" data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false"
+          tabindex=1 title="Fancy word for a beetle.">apple</span>.
+</p>
+
+<script>
+    $(document).ready(function () {
+        var tip1 = new Foundation.Tooltip($("#tip1"));
+        var tip2 = new Foundation.Tooltip($("#tip2"));
+    })
+</script>
+</body>
+</html>
