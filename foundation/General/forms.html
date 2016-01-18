@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/foundation.css" rel="stylesheet" type="text/css">
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="../js/foundation.js"></script>
+</head>
+<body>
+<!--Basics-->
+<!--Text Inputs-->
+<form>
+    <div class="row">
+        <div class="medium-6 columns">
+            <label>Input Label
+                <input type="text" placeholder=".medium-6.columns">
+            </label>
+        </div>
+        <div class="medium-6 columns">
+            <label>Input Label
+                <input type="text" placeholder=".medium-6.columns">
+            </label>
+        </div>
+    </div>
+</form>
+
+<!--Number Inputs-->
+<label> How many puppies?
+    <input type="number" value="100">
+</label>
+
+<!--Text Areas-->
+<label>What many books did you read over summer break?
+    <textarea placeholder="None"></textarea>
+</label>
+
+<!--Select Menu-->
+<label>Select Menu
+    <select>
+        <option value="husker">Husker</option>
+        <option value="starbuck">Starbuck</option>
+        <option value="hotdog">Hot dog</option>
+        <option value="apollo">Apollo</option>
+    </select>
+</label>
+
+<!--Checkboxes and Radio Buttons-->
+<div class="row">
+    <fieldset class="large-6 columns">
+        <legend>Choose Your Favorite</legend>
+        <input type="radio" name="pokemon" value="red" id="popemonRed" required>
+        <label for="popemonRed">Red</label>
+        <input type="radio" name="pokemon" value="blue" id="popemonBlue" required>
+        <label for="popemonBlue">Blue</label>
+        <input type="radio" name="pokemon" value="Black" id="popemonBlack" required>
+        <label for="popemonBlack">Black</label>
+    </fieldset>
+    <fieldset class="large-6 columns">
+        <legend>Check these out</legend>
+        <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+        <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+        <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+    </fieldset>
+</div>
+
+<!--Fieldset Style-->
+<fieldset class="fieldset">
+    <legend>Check these out</legend>
+    <input id="checkbox4" type="checkbox"><label for="checkbox4">Checkbox 4</label>
+    <input id="checkbox5" type="checkbox"><label for="checkbox5">Checkbox 5</label>
+    <input id="checkbox6" type="checkbox"><label for="checkbox6">Checkbox 6</label>
+</fieldset>
+
+<!--Help Text-->
+<label>Password
+    <input type="password" aria-describedby="helpText">
+</label>
+
+<p class="help-text" id="helpText">Your password must have at least 10 characters, a number, and an Emoji.</p>
+
+<!--Label Positioning: .text-right .float-right .middle-->
+<form>
+    <div class="row">
+        <div class="small-3 columns">
+            <label for="right-label" class="text-right middle ">Label</label>
+        </div>
+        <div class="small-9 columns">
+            <input type="text" id="right-label" placeholder="Right-aligned text input">
+        </div>
+    </div>
+</form>
+
+<!--Inline labels and Buttons-->
+<div class="input-group">
+    <span class="input-group-label">$</span>
+    <input type="number" class="input-group-field">
+    <div class="input-group-button">
+        <input type="button" class="button" value="Submit">
+    </div>
+</div>
+
+</body>
+</html>
