@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/foundation.css" rel="stylesheet" type="text/css">
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="../js/foundation.js"></script>
+</head>
+<style>
+    .red {
+        background-color: red;
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    .blue {
+        background-color: blue;
+    }
+
+    .gray {
+        background-color: gray;
+    }
+
+    .lightgray {
+        background-color: lightgray;
+    }
+</style>
+<body>
+<!--Basics-->
+<div class="row">
+    <div class="small-2 large-4 columns red">4</div>
+    <div class="small-4 large-4 columns green">4</div>
+    <div class="small-6 large-4 columns blue">4</div>
+</div>
+<br/>
+
+<div class="row">
+    <div class="large-3 columns red">4</div>
+    <div class="large-6 columns green">4</div>
+    <div class="large-3 columns blue">4</div>
+</div>
+<br/>
+
+<div class="row">
+    <div class="small-6 large-2 columns red">A</div>
+    <div class="small-6 large-8 columns green">B</div>
+    <div class="small-12 large-2 columns blue">C</div>
+</div>
+<br/>
+
+<div class="row">
+    <div class="small-3  columns red">A</div>
+    <div class="small-9  columns green">B</div>
+</div>
+<br/>
+
+<div class="row">
+    <div class="large-4  columns red">A</div>
+    <div class="large-8 columns green">B</div>
+</div>
+<br/>
+
+<div class="row">
+    <div class="small-6 large-5  columns red">A</div>
+    <div class="small-6 large-7 columns green">B</div>
+</div>
+<br/>
+
+<div class="row">
+    <div class="large-6  columns red">A</div>
+    <div class="large-6 columns green">B</div>
+</div>
+<br/>
+
+<!--small medium large-->
+<div class="row">
+    <div class="small-3  columns red">A-small</div>
+    <div class="small-9 columns green">B-small</div>
+</div>
+<br/>
+
+<div class="row">
+    <div class="medium-3  columns red">A-medium</div>
+    <div class="medium-9 columns green">B-medium</div>
+</div>
+<br/>
+
+<div class="row">
+    <div class="large-3 columns red">A-large</div>
+    <div class="large-9 columns green">B-large</div>
+</div>
+<br/>
+
+<!--Expanded-->
+<div class="expanded row red">
+    Row column
+</div>
+<br/>
+
+<!--Nesting-->
+<div class="row">
+    <div class="small-8 columns">8
+        <div class="row">
+            <div class="small-8 columns">8 nested
+                <div class="row">
+                    <div class="small-8 columns">8 nested again</div>
+                    <div class="small-4 columns">4</div>
+                </div>
+            </div>
+            <div class="small-4 columns">4</div>
+        </div>
+    </div>
+    <div class="small-4 columns">4</div>
+</div>
+<hr/>
+
+<!--offset-->
+<div class="row">
+    <div class="large-1 columns gray">1</div>
+    <div class="large-11 columns lightgray">11</div>
+</div>
+<br/>
+
+<div class="row">
+    <div class="large-1 columns gray">1</div>
+    <div class="large-10 large-offset-1 columns lightgray">10, offset 1</div>
+</div>
+<br/>
+
+<div class="row">
+    <div class="large-1 columns gray">1</div>
+    <div class="large-9 large-offset-2 columns lightgray">9,offset 2</div>
+</div>
+<br/>
+
+<div class="row">
+    <div class="large-1 columns gray">1</div>
+    <div class="large-8 large-offset-3 columns lightgray">8, offset 3</div>
+</div>
+<br/>
+
+<!--Incomplete rows-->
+<div class="row">
+    <div class="medium-3 columns gray">3</div>
+    <div class="medium-3 columns lightgray">3</div>
+    <div class="medium-3 columns gray">3</div>
+</div>
+<br/>
+
+<div class="row">
+    <div class="medium-3 columns gray">3</div>
+    <div class="medium-3 columns lightgray">3</div>
+    <div class="medium-3 columns gray end">3</div>
+</div>
+<br/>
+
+<!--Collapse / Uncollapse rows:  No effect-->
+<div class="row medium-uncollapse large-collapse">
+    <div class="small-6 columns lightgray">
+        On a medium screen, I have gutters!
+
+        On a large screen, I have no gutters!
+    </div>
+    <div class="small-6 columns gray">
+        On a medium screen, I have gutters!
+
+        On a large screen, I have no gutters!
+    </div>
+</div>
+<br/>
+
+<!--Centered columns: large-centered==>No effect-->
+<div class="row">
+    <div class="small-3 small-centered columns gray">small 3 centered</div>
+</div>
+<br/>
+
+<div class="row">
+    <div class="small-6 large-centered columns gray">small 6, large center</div>
+</div>
+<br/>
+
+<div class="row">
+    <div class="small-9 small-centered large-uncentered columns gray">small 9</div>
+</div>
+<br/>
+
+<div class="row">
+    <div class="small-11 small-centered columns gray">small 11 center</div>
+</div>
+<br/>
+
+<!--Source ordering-->
+<div class="row">
+    <div class="small-10 small-push-2 columns gray">10</div>
+    <div class="small-2 small-pull-10 columns lightgray">2 last</div>
+</div>
+<div class="row">
+    <div class="small-9 small-push-3 columns gray">9</div>
+    <div class="small-3 small-pull-9 columns lightgray">3 last</div>
+</div>
+<div class="row">
+    <div class="small-8 small-push-4 columns gray">8</div>
+    <div class="small-4 small-pull-8 columns lightgray">4 last</div>
+</div>
+<div class="row">
+    <div class="small-7 small-push-5 columns gray">7</div>
+    <div class="small-5 small-pull-7 columns lightgray">5 last</div>
+</div>
+<br/>
+
+<!--Block grid-->
+<div class="row small-up-1 medium-up-3 large-up-6">
+    <div class="column">
+        <img src="//placehold.it/300x300" class="thumbnail" alt="">
+    </div>
+    <div class="column">
+        <img src="//placehold.it/300x300" class="thumbnail" alt="">
+    </div>
+    <div class="column">
+        <img src="//placehold.it/300x300" class="thumbnail" alt="">
+    </div>
+    <div class="column">
+        <img src="//placehold.it/300x300" class="thumbnail" alt="">
+    </div>
+    <div class="column">
+        <img src="//placehold.it/300x300" class="thumbnail" alt="">
+    </div>
+    <div class="column">
+        <img src="//placehold.it/300x300" class="thumbnail" alt="">
+    </div>
+</div>
+
+</body>
+</html>
